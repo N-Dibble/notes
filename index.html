@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lecture Note Maker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Lecture Note Maker</h1>
+
+    <section class="upload-section">
+      <h2>1. Upload lecture audio/video</h2>
+      <input type="file" id="fileInput" accept="audio/*,video/*" />
+      <button id="transcribeBtn" disabled>Transcribe</button>
+      <p id="status"></p>
+    </section>
+
+    <section class="results-section">
+      <h2>2. Transcript</h2>
+      <textarea id="transcript" rows="10" readonly></textarea>
+
+      <h2>3. Generated notes</h2>
+      <div id="notes"></div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
